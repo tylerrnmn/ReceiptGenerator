@@ -1,0 +1,34 @@
+# Programmer name: Tyler Main 06/26/22 Project 2
+print('Welcome to Tyler\'s receipt machine!')
+
+item1 = input('Please enter the description for item 1:')
+
+print(item1)
+
+price1 = input(f'Please enter the price for {item1}:')
+price1 = float(price1)
+
+print(f'${price1}')
+
+item2 = input('Please enter the description for item 2:')
+
+print(item2)
+
+price2 = input(f'Please enter the price for {item2}:')
+price2 = float(price2)
+
+print(f'${price2}\n')
+
+sub_t = float(price1 + price2)
+tax = float(sub_t % 8.715)
+total = float(sub_t + tax)
+
+print('Receipt\n')
+
+print(f'{item1}  ${price1:.2f}')
+print(f'{item2}  ${price2:.2f}')
+print(f'Subtotal ${sub_t:.2f}')
+print(f'Tax      ${tax:.2f}')
+print(f'Total    ${total:.2f}\n')
+
+print('Until next time!')
